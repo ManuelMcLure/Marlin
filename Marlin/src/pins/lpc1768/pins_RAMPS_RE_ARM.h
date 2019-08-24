@@ -248,7 +248,7 @@
   #define FIL_RUNOUT_PIN                   P1_19  // (5)
 #endif
 
-#define PS_ON_PIN                          P2_12  // (12)
+#define PS_ON_PIN                          P2_06  // (59)
 
 #if !defined(MAX6675_SS_PIN) && DISABLED(USE_ZMAX_PLUG)
   #define MAX6675_SS_PIN                   P1_28
