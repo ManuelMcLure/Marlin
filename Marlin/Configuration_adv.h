@@ -766,7 +766,7 @@
  * @section caselight
  * M355 Case Light on-off / brightness
  */
-#define CASE_LIGHT_ENABLE
+//#define CASE_LIGHT_ENABLE
 #if ENABLED(CASE_LIGHT_ENABLE)
   #define CASE_LIGHT_PIN P0_00                  // Override the default pin if needed
   #define INVERT_CASE_LIGHT false             // Set true if Case Light is ON when pin is LOW
@@ -4502,7 +4502,7 @@
  * Requires 3 signal wires. Some useful debug options are included to demonstrate its usage.
  * @section debug matrix
  */
-#define MAX7219_DEBUG
+//#define MAX7219_DEBUG
 #if ENABLED(MAX7219_DEBUG)
   #define MAX7219_CLK_PIN   P1_14
   #define MAX7219_DIN_PIN   P1_17
@@ -4820,7 +4820,7 @@
 //
 // M43 - display pin status, toggle pins, watch pins, watch endstops & toggle LED, test servo probe
 //
-#define PINS_DEBUGGING
+//#define PINS_DEBUGGING
 
 //
 // M265 - I2C Scanner
@@ -4859,20 +4859,6 @@
 
 // Shrink the build for smaller boards by sacrificing some serial feedback
 //#define MARLIN_SMALL_BUILD
-
-// For TMC drivers
-#define X_SERIAL_TX_PIN  P1_19
-#define X_SERIAL_RX_PIN  P1_19
-#define Y_SERIAL_TX_PIN  P1_19
-#define Y_SERIAL_RX_PIN  P1_19
-#define Z_SERIAL_TX_PIN  P1_19
-#define Z_SERIAL_RX_PIN  P1_19
-#define E0_SERIAL_TX_PIN  P1_21
-#define E0_SERIAL_RX_PIN  P1_21
-#define Z2_SERIAL_TX_PIN  P1_21
-#define Z2_SERIAL_RX_PIN  P1_21
-
-#define FIL_RUNOUT_PIN                   P1_28  // Z_MAX_PIN
 
 #define NO_AUTO_ASSIGN_WARNING
 #define NO_CONFIGURATION_EMBEDDING_WARNING
